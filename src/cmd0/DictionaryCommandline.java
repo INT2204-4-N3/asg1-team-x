@@ -37,10 +37,7 @@ public class DictionaryCommandline {
                 System.out.println("ket qua :" + words.get(i).getWord_target() + "\t\t" + words.get(i).getWord_explain());
 
             }
-
-
     }
-
 
 
   }}
