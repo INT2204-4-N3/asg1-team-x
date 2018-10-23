@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="653.0" prefWidth="850.0" styleClass="root" stylesheets="@CSS.css">
+         <children>
+            <Button fx:id="search" layoutX="282.0" layoutY="110.0" minHeight="18.0" minWidth="10.0" mnemonicParsing="false" onAction="#Search" prefHeight="31.0" prefWidth="31.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/magnifying-glass.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="input" layoutX="22.0" layoutY="105.0" onKeyReleased="#handle" opacity="0.83" prefHeight="48.0" prefWidth="200.0" promptText="Search">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <ListView fx:id="output" layoutX="24.0" layoutY="166.0" onMouseClicked="#handleMouseClick" opacity="0.83" prefHeight="412.0" prefWidth="200.0" />
+            <Button fx:id="Speech" layoutX="233.0" layoutY="110.0" minHeight="18.0" minWidth="10.0" mnemonicParsing="false" onAction="#speech" prefHeight="31.0" prefWidth="31.0">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#030000" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/speaker-filled-audio-tool1.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Accordion layoutX="327.0" layoutY="510.0" />
+            <WebView fx:id="outputlook" layoutX="352.0" layoutY="163.0" opacity="0.83" prefHeight="327.0" prefWidth="341.0" />
+            <Button fx:id="test" layoutX="570.0" layoutY="31.0" minHeight="18.0" minWidth="10.0" mnemonicParsing="false" onAction="#SceneAdd" prefHeight="26.0" prefWidth="30.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/rounded-add-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="del" layoutX="632.0" layoutY="31.0" minHeight="18.0" minWidth="10.0" mnemonicParsing="false" onAction="#SceneDelete" prefHeight="26.0" prefWidth="30.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="693.0" layoutY="31.0" minHeight="18.0" minWidth="10.0" mnemonicParsing="false" onAction="#SceneEdit" prefHeight="26.0" prefWidth="30.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <MenuButton fx:id="menuButton" layoutX="14.0" layoutY="42.0" mnemonicParsing="false" style="-fx-background-color: #a5d1f8;" text="English">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#changeE" text="English" />
+                <MenuItem mnemonicParsing="false" onAction="#changeV" text="Vienamese" />
+              </items>
+            </MenuButton>
+
+         </children>
+      </Pane>
+</children>
+</GridPane>

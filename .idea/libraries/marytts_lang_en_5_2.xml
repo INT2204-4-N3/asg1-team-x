@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="marytts-lang-en-5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/marytts-lang-en-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-dfki-poppy-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-cmu-slt-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-cmu-rms-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/marytts-builder-5.2-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-20180813.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jlayer-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/java-google-speech-api-V2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
