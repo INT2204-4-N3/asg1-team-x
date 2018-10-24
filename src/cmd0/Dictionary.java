@@ -16,3 +16,4 @@ public class Dictionary {
         this.words.add(word);
     }
 }
+ 
