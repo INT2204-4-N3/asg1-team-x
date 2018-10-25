@@ -28,19 +28,19 @@ public class Controller2 {
     @FXML
     private TextField addVienam = new TextField();
     @FXML
-    DictionaryCommandline dictionaryCommandline = new DictionaryCommandline("C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/E_V.txt");
+    DictionaryCommandline dictionaryCommandline = new DictionaryCommandline("E_V.txt");
     @FXML
     MenuButton menuButton=new MenuButton();
-    String path="C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/E_V.txt";
+    String path="E_V.txt";
     public void changeV (ActionEvent event){
         menuButton.setText("Vietnamese");
-         path="C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/V_E.txt";
+         path="V_E.txt";
         dictionaryCommandline= new DictionaryCommandline(path);
 
     }
     public void changeE (ActionEvent event){
         menuButton.setText("English");
-      path="C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/E_V.txt";
+      path="E_V.txt";
         dictionaryCommandline= new DictionaryCommandline(path);
 
     }

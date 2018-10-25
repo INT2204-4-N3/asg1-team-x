@@ -76,19 +76,19 @@ public class Controller {
     String lang="en";
     String to="vi";
 
-    DictionaryCommandline dictionaryCommandline = new DictionaryCommandline("C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/E_V.txt");
+    DictionaryCommandline dictionaryCommandline = new DictionaryCommandline("E_V.txt");
 
 
     public void changeV (ActionEvent event){
         menuButton.setText("Vietnamese");
-        String path="C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/V_E.txt";
+        String path="V_E.txt";
         dictionaryCommandline= new DictionaryCommandline(path);
         lang="vi";
         to="en";
     }
     public void changeE (ActionEvent event){
         menuButton.setText("English");
-        String path="C:/Users/Truong Thanh Tu/Desktop/dictionaryEV/E_V.txt";
+        String path="E_V.txt";
         dictionaryCommandline= new DictionaryCommandline(path);
         lang="en";
         to="vi";
